@@ -62,13 +62,13 @@
 				"hate1": {	
 					"limiters" : [ { "parameters" : ["blazers"], "type" : "CREATURE_FACTION_LIMITER" } ],
 					"type" : "HATE",
-					"subtype" : "creature.hotaGunmanUp",
+					"subtype" : "creature.bountyHunter",
 				    "val" : 50
 				},
 				"hate2": {	
 					"limiters" : [ { "parameters" : ["blazers"], "type" : "CREATURE_FACTION_LIMITER" } ],
 					"type" : "HATE",
-					"subtype" : "creature.hotaGunman",
+					"subtype" : "creature.gunslinger",
 				    "val" : 50
 				},
 				"hate3": {	
@@ -98,13 +98,13 @@
 				"hate7": {	
 					"limiters" : [ { "parameters" : ["blazers"], "type" : "CREATURE_FACTION_LIMITER" } ],
 					"type" : "HATE",
-					"subtype" : "creature.hotaDread",
+					"subtype" : "creature.hotaDreadnought",
 				    "val" : 50
 				},
 				"hate8": {	
 					"limiters" : [ { "parameters" : ["blazers"], "type" : "CREATURE_FACTION_LIMITER" } ],
 					"type" : "HATE",
-					"subtype" : "creature.hotaJugger",
+					"subtype" : "creature.hotaJuggernaut",
 				    "val" : 50
 				}
 			}

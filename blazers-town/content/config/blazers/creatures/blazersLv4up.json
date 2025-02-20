@@ -91,13 +91,13 @@
 			"hate1" : 
 			{
 				"type" : "HATE",
-				"subtype" : "creature.hotaGunman",
+				"subtype" : "creature.gunslinger",
 				"val" : 100
 			},
 			"hate2" : 
 			{
 				"type" : "HATE",
-				"subtype" : "creature.hotaGunmanUp",
+				"subtype" : "creature.bountyHunter",
 				"val" : 100
 			}
 		},

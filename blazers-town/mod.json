@@ -3,7 +3,7 @@
 	"description" : "Blazers Town",
 	"author" : "红枫居士",
 	"contact" : "http://forum.vcmi.eu/index.php",
-	"version" : "1.00",
+	"version" : "1.01",
 	"modType" : "Town",
 	"language": "chinese",
 	"depends": ["hota.factory"],
