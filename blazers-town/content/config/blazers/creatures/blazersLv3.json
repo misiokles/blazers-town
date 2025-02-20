@@ -1,0 +1,141 @@
+{
+	"blazlv3":
+	{
+		"name" :
+		{
+			"plural" : "光元素",
+			"singular" : "光元素"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 25,
+			 "min" : 12
+		},
+		"faction" : "blazers",
+		"aiValue" : 268,
+		"attack" : 6,
+		"hasDoubleWeek" : true,
+                "cost" :
+		{
+			"gold" : 180
+		},
+		"damage" :
+		{
+			 "max" : 6,
+			 "min" : 2
+		},
+		"defense" : 8,
+		"fightValue" : 269,
+		"horde" : 3,
+		"graphics" :
+		{
+			"animation" : "blazers/battle/blv3.def",
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"map" : "blazers/map/blv3mini.def",
+			"iconSmall" : "blazers/iconsSmall/blv3s.bmp",
+			"iconLarge" : "blazers/iconsBig/blv3l.bmp",
+			"timeBetweenFidgets" : 1,
+		},
+		"doubleWide" : false,
+		"growth" : 7,
+		"hitPoints" : 20,
+        "level" : 3,
+		"upgrades":
+		[
+			"blazlv3up"
+		],
+		"sound" :
+		{
+			"attack" : "blazers/blv3MOVE.wav",
+			"defend" : "blazers/blv3MOVE.wav",
+			"killed" : "blazers/blv3MOVE.wav",
+			"move": "blazers/blv3MOVE.wav",
+			"wince" : "blazers/blv3MOVE.wav",
+		},
+		"speed" : 8,
+		"abilities" :
+        {
+			"canFly" : 
+			{
+				"type" : "FLYING"
+			},
+			"nonLiving" : 
+			{
+				"type" : "NON_LIVING"
+			},
+			"immuneToMind" : 
+			{
+				"type" : "MIND_IMMUNITY"
+			},
+			"immuneToArrow" :
+            {
+                "type" : "GENERAL_DAMAGE_REDUCTION",
+		        "subtype" : "damageTypeMelee",
+		        "val" : 16
+            },
+			"airShield":
+			{
+				"type":"GENERAL_DAMAGE_REDUCTION",
+				"subtype" : "damageTypeRanged",
+				"val" : 16
+			}
+        },
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.attack"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},	
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.defence"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMax"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMin"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "BLOCKS_RETALIATION"
+				},
+				"values" : [ false, false, false, false, false, false, true, true, true, true ]	
+			}
+		]
+	}
+}

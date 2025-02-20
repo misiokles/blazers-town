@@ -1,0 +1,137 @@
+{
+	"blazlv3up":
+	{
+		"name" :
+		{
+			"plural" : "圣辉元素",
+			"singular" : "圣辉元素"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 25,
+			 "min" : 12
+		},
+		"faction" : "blazers",
+		"aiValue" : 303,
+		"attack" : 7,
+		"hasDoubleWeek" : true,
+         "cost" :
+		{
+			"gold" : 220
+		},
+		"damage" :
+		{
+			 "max" : 6,
+			 "min" : 3
+		},
+		"defense" : 9,
+		"fightValue" : 301,
+		"horde" : 3,
+		"graphics" :
+		{
+			"animation" : "blazers/battle/blv3up.def",
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"map" : "blazers/map/blv3upmini.def",
+			"iconSmall" : "blazers/iconsSmall/blv3ups.bmp",
+			"iconLarge" : "blazers/iconsBig/blv3upl.bmp",
+			"timeBetweenFidgets" : 1,
+		},
+		"doubleWide" : false,
+		"growth" : 7,
+		"hitPoints" : 20,
+        "level" : 3,
+		"sound" :
+		{
+			"attack" : "blazers/blv3MOVE.wav",
+			"defend" : "blazers/blv3MOVE.wav",
+			"killed" : "blazers/blv3MOVE.wav",
+			"move": "blazers/blv3MOVE.wav",
+			"wince" : "blazers/blv3MOVE.wav",
+		},
+		"speed" : 11,
+		"abilities" :
+        {
+            "canFly" : 
+			{
+				"type" : "FLYING"
+			},
+			"nonLiving" : 
+			{
+				"type" : "NON_LIVING"
+			},
+			"immuneToMind" : 
+			{
+				"type" : "MIND_IMMUNITY"
+			},
+			"immuneToArrow" :
+            {
+                "type" : "GENERAL_DAMAGE_REDUCTION",
+		        "subtype" : "damageTypeMelee",
+		        "val" : 24
+            },
+			"airShield":
+			{
+				"type":"GENERAL_DAMAGE_REDUCTION",
+				"subtype" : "damageTypeRanged",
+				"val" : 24
+			}
+        },
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.attack"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},	
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.defence"
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMax"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMin"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "BLOCKS_RETALIATION"
+				},
+				"values" : [ false, false, false, false, false, false, true, true, true, true ]	
+			}
+		]
+	}
+}

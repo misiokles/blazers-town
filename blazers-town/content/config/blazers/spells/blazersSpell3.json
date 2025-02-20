@@ -1,0 +1,197 @@
+{
+	"blazersSpell3":
+	{
+		"type": "ability", 
+		"name": "光神审判",
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": false
+		},
+		"level": 2,
+		"power": 10,
+		"defaultGainChance": 0, 
+		"gainChance":
+		{	},
+		 
+		"flags" : {"negative": true, "special" : true},
+		 
+		"graphics":
+		{
+			"iconEffect": "blazers/spells/blazersSpell3.bmp"
+		},
+		
+		"animation":
+		{
+			"affect":[{"defName":"blazers/spells/blazersSpell3.def", "verticalPosition":"bottom"}]
+		},
+
+		"sounds":
+		{
+			"cast": "PRAYER"
+		},
+		"counters" : {
+			"spell.blazersSpell1": true,
+			"spell.blazersSpell2": true
+		},
+		"targetType": "CREATURE",
+ 
+		"levels":
+		{
+			"base":
+			{
+				"power": 10,
+				"aiValue": 50,
+				"targetModifier":
+				{
+					"smart": true
+				}
+			},
+			"none":
+			{
+				"description": "{光神审判}\n\n降低敌方单只部队的生命值18%、伤害18%和速度3。\n",
+	 
+				"cost": 0,
+	            "range": "0",
+				"effects":
+				{
+					"health":
+					{
+						"type": "STACK_HEALTH",
+						"val": -18,
+						"valueType": "PERCENT_TO_BASE",
+						"duration": "N_TURNS",
+						"turns":4
+					},
+					"damage":
+					{
+						"type": "CREATURE_DAMAGE",
+						"subtype": "creatureDamageBoth",
+						"val" : -18,
+						"valueType": "PERCENT_TO_BASE",
+						"duration": "N_TURNS",
+						"turns":4
+					},
+					
+					"speed":
+					{
+						"type": "STACKS_SPEED",
+						"val" : -3,
+						"valueType": "BASE_NUMBER",
+						"duration": "N_TURNS",
+						"turns":4
+					}
+				}
+			},
+			"basic":
+			{
+				"description": "{光神审判}\n\n降低敌方单只部队的生命值23%、伤害23%和速度4。\n",
+	 
+				"cost": 0,
+	            "range": "0",
+				"effects":
+				{
+					"health":
+					{
+						"type": "STACK_HEALTH",
+						"val": -23,
+						"valueType": "PERCENT_TO_BASE",
+						"duration": "N_TURNS",
+						"turns":4
+					},
+					"damage":
+					{
+						"type": "CREATURE_DAMAGE",
+						"subtype": "creatureDamageBoth",
+						"val" : -23,
+						"valueType": "PERCENT_TO_BASE",
+						"duration": "N_TURNS",
+						"turns":4
+					},
+					"speed":
+					{
+						"type": "STACKS_SPEED",
+						"val" : -4,
+						"valueType": "BASE_NUMBER",
+						"duration": "N_TURNS",
+						"turns":4
+					}
+				}
+			},
+			"advanced":
+			{
+				"description": "{光神审判}\n\n降低敌方单只部队的生命值28%、伤害28%和速度4。\n",
+	 
+				"cost": 0,
+	            "range": "0",
+				"effects":
+				{
+					"health":
+					{
+						"type": "STACK_HEALTH",
+						"val": -28,
+						"valueType": "PERCENT_TO_BASE",
+						"duration": "N_TURNS",
+						"turns":5
+					},
+					"damage":
+					{
+						"type": "CREATURE_DAMAGE",
+						"subtype": "creatureDamageBoth",
+						"val" : -28,
+						"valueType": "PERCENT_TO_BASE",
+						"duration": "N_TURNS",
+						"turns":5
+					},
+					"speed":
+					{
+						"type": "STACKS_SPEED",
+						"val" : -4,
+						"valueType": "BASE_NUMBER",
+						"duration": "N_TURNS",
+						"turns":5
+					}
+				}
+			},
+			"expert":
+			{
+				"description": "{光神审判}\n\n降低敌方单只部队的生命值33%、伤害33%和速度5。\n",
+	 
+				"cost": 0,
+	            "range": "0",
+				"effects":
+				{
+					"health":
+					{
+						"type": "STACK_HEALTH",
+						"val": -33,
+						"valueType": "PERCENT_TO_BASE",
+						"duration": "N_TURNS",
+						"turns":5
+					},
+					"damage":
+					{
+						"type": "CREATURE_DAMAGE",
+						"subtype": "creatureDamageBoth",
+						"val" : -33,
+						"valueType": "PERCENT_TO_BASE",
+						"duration": "N_TURNS",
+						"turns":5
+					},
+					"speed":
+					{
+						"type": "STACKS_SPEED",
+						"val" : -5,
+						"valueType": "BASE_NUMBER",
+						"duration": "N_TURNS",
+						"turns":5
+					}
+				}
+				
+			}
+		}
+	}
+ 
+}

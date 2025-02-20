@@ -1,0 +1,70 @@
+{
+	"blaJacqueline" :
+	{
+		"class" : "honorWarrior",
+		"female" : true,
+
+		"images" :
+		{
+			
+			"specialtySmall" : "blazers/heroes/hero15Jacqueline/spec-small.png",
+			"specialtyLarge" : "blazers/heroes/hero15Jacqueline/spec-large.png",
+			"large" : "blazers/heroes/hero15Jacqueline/portrait-large.png",
+			"small" : "blazers/heroes/hero15Jacqueline/portrait-small.png"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "blv1",
+				"max" : 28,
+				"min" : 18
+			},
+			{
+				"creature" : "blv2",
+				"max" : 12,
+				"min" : 6
+			},
+			{
+				"creature" : "blazlv3",
+				"max" : 4,
+				"min" : 3
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "pathfinding"
+			}
+		],
+		
+		"texts" :
+		{
+			"name" : "杰奎琳",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"name" : "+1水晶",
+				"description" : "{水晶}\r\n\r\n为王国每天额外提供1个水晶。",
+				"tooltip" : "每天+1水晶"
+			}
+		},
+		
+		"specialty" : {
+			"bonuses" : {
+				"crystal" : {
+					"subtype" : "resource.crystal",
+					"type" : "GENERATE_RESOURCE",
+					"val" : 1
+				}
+			}
+		}
+	}
+}
+

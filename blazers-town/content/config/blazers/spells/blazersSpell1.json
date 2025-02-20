@@ -1,0 +1,305 @@
+{
+	"blazersSpell1":
+	{
+		"type": "ability", 
+		"name": "光神祝福",
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": false
+		},
+		"level": 2,
+		"power": 10,
+		"defaultGainChance": 0, 
+		"gainChance":
+		{	},
+		"canCastOnSelf" : true,
+ 
+		"flags" : {"positive": true, "special" : true},
+		 
+		"graphics":
+		{
+			"iconEffect": "blazers/spells/blazersSpell1.bmp"
+		},
+		
+		"animation":
+		{
+			"affect":["C01SPW"]
+		},
+
+		"sounds":
+		{
+			"cast": "BLESS"
+		},
+		"counters" : {
+			"spell.blazersSpell3": true
+		},
+		"targetType": "CREATURE",
+ 
+		"levels":
+		{
+			"base":
+			{
+				"power": 10,
+				"aiValue": 50,
+				"targetModifier":
+				{
+					"smart": true
+				}
+			},
+			"none":
+			{
+				"description": "{光神祝福}\n\n同时提高所有部队的生命值9%+1、伤害9%+1和速度1。\n",
+	 
+				"cost": 0,
+	            "range": "X",
+				"effects":
+				{
+					"health":
+					{
+						"type": "STACK_HEALTH",
+						"val": 1,
+						"valueType": "BASE_NUMBER",
+						"duration": "N_TURNS",
+						"turns":3
+					},
+					"health1":
+					{
+						"type": "STACK_HEALTH",
+						"val": 9,
+						"valueType": "PERCENT_TO_BASE",
+						"duration": "N_TURNS",
+						"turns":3
+					},
+					"redeem2" :{
+						"type" : "HP_REGENERATION",
+						"val" : 50,
+						"valueType" : "BASE_NUMBER",
+						"duration" : [
+							"UNTIL_ATTACK",
+							"N_TURNS"
+						],
+						"turns":3
+					},
+					"damage":
+					{
+						"type": "CREATURE_DAMAGE",
+						"subtype": "creatureDamageBoth",
+						"val" : 1,
+						"valueType": "BASE_NUMBER",
+						"duration": "N_TURNS",
+						"turns":3
+					},
+					"damage1":
+					{
+						"type": "CREATURE_DAMAGE",
+						"subtype": "creatureDamageBoth",
+						"val" : 9,
+						"valueType": "PERCENT_TO_BASE",
+						"duration": "N_TURNS",
+						"turns":3
+					},
+					
+					"speed":
+					{
+						"type": "STACKS_SPEED",
+						"val" : 1,
+						"valueType": "BASE_NUMBER",
+						"duration": "N_TURNS",
+						"turns":3
+					}
+				}
+			},
+			"basic":
+			{
+				"description": "{光神祝福}\n\n同时提高所有部队的生命值12%+1、伤害12%+1和速度2。\n",
+	 
+				"cost": 0,
+	            "range": "X",
+				"effects":
+				{
+					"health":
+					{
+						"type": "STACK_HEALTH",
+						"val": 1,
+						"valueType": "BASE_NUMBER",
+						"duration": "N_TURNS",
+						"turns":4
+					},
+					"health1":
+					{
+						"type": "STACK_HEALTH",
+						"val": 12,
+						"valueType": "PERCENT_TO_BASE",
+						"duration": "N_TURNS",
+						"turns":4
+					},
+					"redeem2" :{
+						"type" : "HP_REGENERATION",
+						"val" : 50,
+						"valueType" : "BASE_NUMBER",
+						"duration" : [
+							"UNTIL_ATTACK",
+							"N_TURNS"
+						],
+						"turns":4
+					},
+					"damage":
+					{
+						"type": "CREATURE_DAMAGE",
+						"subtype": "creatureDamageBoth",
+						"val" : 1,
+						"valueType": "BASE_NUMBER",
+						"duration": "N_TURNS",
+						"turns":4
+					},
+					"damage1":
+					{
+						"type": "CREATURE_DAMAGE",
+						"subtype": "creatureDamageBoth",
+						"val" : 12,
+						"valueType": "PERCENT_TO_BASE",
+						"duration": "N_TURNS",
+						"turns":4
+					},
+					"speed":
+					{
+						"type": "STACKS_SPEED",
+						"val" : 2,
+						"valueType": "BASE_NUMBER",
+						"duration": "N_TURNS",
+						"turns":4
+					}
+				}
+			},
+			"advanced":
+			{
+				"description": "{光神祝福}\n\n同时提高所有部队的生命值15%+1、伤害15%+1和速度2。\n",
+	 
+				"cost": 0,
+	            "range": "X",
+				"effects":
+				{
+					"health":
+					{
+						"type": "STACK_HEALTH",
+						"val": 1,
+						"valueType": "BASE_NUMBER",
+						"duration": "N_TURNS",
+						"turns":4
+					},
+					"health1":
+					{
+						"type": "STACK_HEALTH",
+						"val": 15,
+						"valueType": "PERCENT_TO_BASE",
+						"duration": "N_TURNS",
+						"turns":4
+					},
+					"redeem2" :{
+						"type" : "HP_REGENERATION",
+						"val" : 60,
+						"valueType" : "BASE_NUMBER",
+						"duration" : [
+							"UNTIL_ATTACK",
+							"N_TURNS"
+						],
+						"turns":4
+					},
+					"damage":
+					{
+						"type": "CREATURE_DAMAGE",
+						"subtype": "creatureDamageBoth",
+						"val" : 1,
+						"valueType": "BASE_NUMBER",
+						"duration": "N_TURNS",
+						"turns":4
+					},
+					"damage1":
+					{
+						"type": "CREATURE_DAMAGE",
+						"subtype": "creatureDamageBoth",
+						"val" : 15,
+						"valueType": "PERCENT_TO_BASE",
+						"duration": "N_TURNS",
+						"turns":4
+					},
+					"speed":
+					{
+						"type": "STACKS_SPEED",
+						"val" : 2,
+						"valueType": "BASE_NUMBER",
+						"duration": "N_TURNS",
+						"turns":4
+					}
+				}
+			},
+			"expert":
+			{
+				"description": "{光神祝福}\n\n同时提高所有部队的生命值18%+2、伤害18%+1和速度3。\n",
+	 
+				"cost": 0,
+	            "range": "X",
+				"effects":
+				{
+					"health":
+					{
+						"type": "STACK_HEALTH",
+						"val": 2,
+						"valueType": "BASE_NUMBER",
+						"duration": "N_TURNS",
+						"turns":5
+					},
+					"health1":
+					{
+						"type": "STACK_HEALTH",
+						"val": 18,
+						"valueType": "PERCENT_TO_BASE",
+						"duration": "N_TURNS",
+						"turns":5
+					},
+					"redeem2" :{
+						"type" : "HP_REGENERATION",
+						"val" : 70,
+						"valueType" : "BASE_NUMBER",
+						"duration" : [
+							"UNTIL_ATTACK",
+							"N_TURNS"
+						],
+						"turns":5
+					},
+					"damage":
+					{
+						"type": "CREATURE_DAMAGE",
+						"subtype": "creatureDamageBoth",
+						"val" : 1,
+						"valueType": "BASE_NUMBER",
+						"duration": "N_TURNS",
+						"turns":5
+					},
+					"damage1":
+					{
+						"type": "CREATURE_DAMAGE",
+						"subtype": "creatureDamageBoth",
+						"val" : 18,
+						"valueType": "PERCENT_TO_BASE",
+						"duration": "N_TURNS",
+						"turns":5
+					},
+					"speed":
+					{
+						"type": "STACKS_SPEED",
+						"val" : 3,
+						"valueType": "BASE_NUMBER",
+						"duration": "N_TURNS",
+						"turns":5
+					}
+				}
+				
+			}
+		}
+	}
+ 
+}

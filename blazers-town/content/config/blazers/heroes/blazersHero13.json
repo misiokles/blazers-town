@@ -1,0 +1,61 @@
+{
+	"blaZawiyah" :
+	{
+		"class" : "honorWarrior",
+		"female" : true,
+
+		"images" :
+		{
+			"specialtySmall" : "blazers/heroes/hero13Zawiyah/spec-small.png",
+			"specialtyLarge" : "blazers/heroes/hero13Zawiyah/spec-large.png",
+			"large" : "blazers/heroes/hero13Zawiyah/portrait-large.png",
+			"small" : "blazers/heroes/hero13Zawiyah/portrait-small.png"
+		},
+		"army" :
+		[
+			{
+				"creature" : "blv1",
+				"max" : 26,
+				"min" : 16
+			},
+			{
+				"creature" : "blv2",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "blazlv3",
+				"max" : 4,
+				"min" : 3
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "leadership"
+			},
+			{
+				"level" : "basic",
+				"skill" : "tactics"
+			}
+		],
+		
+		"texts" :
+		{
+			"name" : "扎维亚",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "{光辉战士}\r\n\r\n达到6级以后提高光辉战士或炎阳战王的攻击力与防御力。",
+				"name" : "光辉战士",
+				"tooltip" : "生物强化：光辉战士"
+			}
+		},
+		
+		"specialty" : {
+			"creature" : "blv6"
+		}
+	}
+}

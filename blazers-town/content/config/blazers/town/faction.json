@@ -1,0 +1,124 @@
+{
+	"blazers" : {
+		"alignment" : "neutral",
+		"creatureBackground" : { "120px" : "blazers/120bla", "130px" : "blazers/130bla" },
+		"name" : "开拓团",
+		"nativeTerrain" : "rough",
+		"boat" : "boatCastle",
+		"town" :
+		{
+			"musicTheme" : ["music/blazers/blazerstown"],
+			"defaultTavern" : 5,
+			"tavernVideo" : "TAVERN.BIK",
+			"guildBackground" : "TPMAGE.bmp",
+			"townBackground": "blazers/town-screen/background",
+			"guildWindow": "blazers/town-screen/mage-guild",
+			"hallBackground": "blazers/town-screen/TPTHBKCS.png",
+			"hallSlots":
+			[
+				[ [ "villageHall", "townHall", "cityHall", "capitol" ], [ "fort", "citadel", "castle" ], [ "tavern" ], [ "blacksmith" ] ],
+				[ [ "marketplace", "resourceSilo" ], [ "mageGuild1", "mageGuild2", "mageGuild3", "mageGuild4", "mageGuild5" ], [ "special1"] ],
+				[ ["special2" ],["special3" ], [ "horde1", "horde1Upg" ] ],
+				[ [ "dwellingLvl1", "dwellingUpLvl1" ], [ "dwellingLvl2", "dwellingUpLvl2" ], [ "dwellingLvl3", "dwellingUpLvl3" ], [ "dwellingLvl4", "dwellingUpLvl4" ] ],
+				[ [ "dwellingLvl5", "dwellingUpLvl5" ], [ "dwellingLvl6", "dwellingUpLvl6" ], [ "dwellingLvl7", "dwellingUpLvl7" ], [ "dwellingLvl7b", "dwellingUpLvl7b" ] ]
+			],
+			"creatures" :
+			[
+				[ "blv1", "blv1up" ],
+				[ "blv2", "blv2up" ],
+				[ "blazlv3", "blazlv3up" ],
+				[ "blv4", "blv4up" ],
+				[ "blv5", "blv5up" ],
+				[ "blv6", "blv6up" ],
+				[ "blv7", "blv7up","blv7b", "blv7upb" ]
+			],
+			"moatAbility" : "castleMoat",
+			"horde" : [ 0, 1 ],
+			"mageGuild" : 5,
+			"primaryResource" : "gems",
+			"buildingsIcons" : "blazers/town-hall.def",
+			"icons" :
+			{
+				"village" : {
+					"normal" : {
+						"small" : "blazers/icons/hall-small.bmp",
+						"large" : "blazers/icons/hall-big.bmp"
+					},
+					"built" : {
+						"small" : "blazers/icons/hall-builded-small.bmp",
+						"large" : "blazers/icons/hall-builded-big.bmp"
+					}
+				},
+				"fort" : {
+					"normal" : {
+						"small" : "blazers/icons/fort-small.bmp",
+						"large" : "blazers/icons/fort-big.bmp"
+					},
+					"built" : {
+						"small" : "blazers/icons/fort-builded-small.bmp",
+						"large" : "blazers/icons/fort-builded-big.bmp"
+					}
+				}
+			},
+
+			"mapObject" : {
+				"filters" : {
+					"castle" : [ "allOf", [ "castle" ], [ "noneOf", [ "capitol" ] ] ],
+					"citadel" : [ "allOf", [ "citadel" ], [ "noneOf", [ "castle" ] ] ],
+					"fort" : [ "allOf", [ "fort" ], [ "noneOf", [ "citadel" ] ] ]
+				},
+				"templates" : {
+					"capitol" : { "animation" : "blazers/adventure-map/town-capitol.def" },
+					"castle" : { "animation" : "blazers/adventure-map/town-castle.def" },
+					"citadel" : { "animation" : "blazers/adventure-map/town-citadel.def" },
+					"fort" : { "animation" : "blazers/adventure-map/town-fort.def" },
+					"village" : { "animation" : "blazers/adventure-map/town-village.def" }
+				}
+			},
+			"names" :
+			[
+				"红塔山",
+				"角斗营地",
+				"光复要塞",
+				"神佑塔",
+				"尖刀岭",
+				"红山镇",
+				"光之圣城",
+				"烈日岗",
+				"功勋镇",
+				"英灵崖",
+				"甜井镇",
+				"神坛市",
+				"井岗",
+				"光明顶",
+				"红锈崖",
+				"辉煌峡谷",
+				"红日城",
+				"旭日堡"
+			],
+			"tavern" :
+			{
+				"knight"       : 4,
+				"cleric"       : 3,
+				"ranger"       : 3,
+				"druid"        : 2,
+				"alchemist"    : 3,
+				"wizard"       : 2,
+				"demoniac"     : 4,
+				"heretic"      : 4,
+				"deathknight"  : 3,
+				"necromancer"  : 2,
+				"warlock"      : 4,
+				"overlord"     : 4,
+				"barbarian"    : 5,
+				"battlemage"   : 5,
+				"beastmaster"  : 5,
+				"witch"        : 4,
+				"planeswalker" : 4,
+				"elementalist" : 3,
+				"brightWizard"    : 6,
+				"honorWarrior" : 6
+			}
+		}
+	}
+}

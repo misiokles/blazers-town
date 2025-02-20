@@ -1,0 +1,74 @@
+{
+	"blaTalinus" : 
+	{
+		"class" : "brightWizard",
+		"female" : false,
+
+		"images" :
+		{
+			"specialtySmall" : "blazers/heroes/hero04Talinus/spec-small.png",
+			"specialtyLarge" : "blazers/heroes/hero04Talinus/spec-large.png",
+			"large" : "blazers/heroes/hero04Talinus/portrait-large.png",
+			"small" : "blazers/heroes/hero04Talinus/portrait-small.png"
+		},
+
+		"spellbook" :
+		[
+			"bless"
+		],
+		"army" :
+		[
+			{
+				"creature" : "blv1",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "blv2",
+				"max" : 10,
+				"min" : 5
+			},
+			{
+				"creature" : "blazlv3",
+				"max" : 4,
+				"min" : 3
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "waterMagic"
+			},
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			}
+		],
+		
+		"texts" :
+		{
+			"name" : "塔里努斯",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"name" : "圣灵佑佐",
+				"description" : "{圣灵佑佐}\r\n\r\n使用圣灵佑佐魔法时效果大增。",
+				"tooltip" : "魔法增强：圣灵佑佐"
+			}
+		},
+		
+		"specialty" : {
+			"bonuses" : {
+				"bless" : {
+					"subtype" : "spell.bless",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3
+				}
+			}
+		}
+	}
+}
+
+

@@ -1,0 +1,65 @@
+{
+	"blaWahalda" :
+	{
+		"class" : "brightWizard",
+		"female" : true,
+
+		"images" :
+		{
+			
+			"specialtySmall" : "blazers/heroes/hero08Wahalda/spec-small.png",
+			"specialtyLarge" : "blazers/heroes/hero08Wahalda/spec-large.png",
+			"large" : "blazers/heroes/hero08Wahalda/portrait-large.png",
+			"small" : "blazers/heroes/hero08Wahalda/portrait-small.png"
+		},
+		"spellbook" :
+		[
+			"curse"
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "blv1",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "blv2",
+				"max" : 10,
+				"min" : 5
+			},
+			{
+				"creature" : "blazlv3",
+				"max" : 4,
+				"min" : 3
+			}
+		],
+
+		"skills" : 
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "fireMagic"
+			}
+		],
+		"texts" :
+		{
+			"name" : "瓦哈尔达",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "{玛雅法师}\r\n\r\n达到4级以后提高玛雅法师或玛雅大法师的攻击力与防御力。",
+				"name" : "玛雅法师",
+				"tooltip" : "生物强化：玛雅法师"
+			}
+		},
+		"specialty" : {
+			"creature" : "blv4"
+		}
+	}
+}

@@ -1,0 +1,75 @@
+{
+	"blaStephanie" :
+	{
+		"class" : "honorWarrior",
+		"female" : true,
+		"images" :
+		{
+			
+			"specialtySmall" : "blazers/heroes/hero16Stephanie/spec-small.png",
+			"specialtyLarge" : "blazers/heroes/hero16Stephanie/spec-large.png",
+			"large" : "blazers/heroes/hero16Stephanie/portrait-large.png",
+			"small" : "blazers/heroes/hero16Stephanie/portrait-small.png"
+		},
+		"army" :
+		[
+			{
+				"creature" : "blv1",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "firstAidTent",
+				"max" : 1,
+				"min" : 1
+			},
+			{
+				"creature" : "blv2",
+				"max" : 10,
+				"min" : 5
+			}
+		],
+		
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "tactics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "firstAid"
+			}
+		],
+		"texts" :
+		{
+			"name" : "斯蒂芬妮",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"description" : "在急救术上每级得到4%的额外奖励，急救帐篷的生命值增加225点。",
+				"name" : "急救术",
+				"tooltip" : "技能增强：急救术"
+			}
+		},
+		
+		"specialty": 
+		{
+			"bonuses" : {
+				"firstAid" : {
+					"subtype" : "core:spell.firstAid",
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "SPECIFIC_SPELL_POWER",
+					"val" : 4,
+					"valueType" : "PERCENT_TO_BASE"
+				},
+				"firstAid2" :{
+						"type" : "STACK_HEALTH",
+						"val" : 225,
+						"propagator" : "PLAYER_PROPAGATOR",
+						"limiters" : [ {"type" : "CREATURE_TYPE_LIMITER", "parameters" : [ "firstAidTent", true]	} ]
+				},
+			}
+		}
+	}
+}

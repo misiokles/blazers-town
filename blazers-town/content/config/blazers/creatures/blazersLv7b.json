@@ -1,0 +1,192 @@
+{
+	"blv7b":
+	{
+		"name" :
+		{
+			"plural" : "神殿护卫",
+			"singular" : "神殿护卫"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 10,
+			 "min" : 4
+		},
+		"faction" : "blazers",
+		"aiValue" : 3122,
+		"attack" : 16,
+		"hasDoubleWeek" : false,
+        "cost" :
+		{
+			"gold" : 2000
+		},
+		"damage" :
+		{
+			 "max" : 40,
+			 "min" : 30
+		},
+		"defense" : 18,
+		"fightValue" : 3117,
+		
+		"upgrades":
+		[
+			"blv7upb"
+		],
+		"graphics" :
+		{
+			"animation" : "blazers/battle/blv7b.def",
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"map" : "blazers/map/blv7bmini.def",
+			"iconSmall" : "blazers/iconsSmall/blv7bs.bmp",
+			"iconLarge" : "blazers/iconsBig/blv7bl.bmp",
+			"timeBetweenFidgets" : 1,
+			"missile" :
+			{
+				"projectile": "PCYCLBX.DEF",
+				"attackClimaxFrame" : 9,
+				"offset" :
+				{
+					"upperX" : 38,
+					"upperY" : -65,
+					"middleX" : 36,
+					"middleY" : -59,
+					"lowerX" : 21,
+					"lowerY" : -50
+				},
+				"frameAngles" : [ 90, 72, 45, 27, 0, -27, -45, -72, -90 ]
+			}
+		},
+		"doubleWide" : true,
+		"description" : "{技能说明}： \n{光神护佑}：光神护佑对己方单体使用，可以和光神祝福叠加。",
+		"growth" : 1,
+		"shots": 4,
+		"hitPoints" : 150,
+        "level" : 7,
+		"sound" :
+		{
+			"attack": "MAGMATTK.wav",
+			"defend": "MAGMDFND.wav",
+			"killed": "MAGMKILL.wav",
+			"move": "MAGMMOVE.wav",
+			"shoot": "CCYCSHOT.wav",
+			"wince": "MAGMWNCE.wav"
+		},
+		"speed" : 6,
+		"abilities" :
+        {
+            "basicSlayer" : { "type" : "KING", "val": 0 },
+			"canShoot" :
+			{
+				"type" : "SHOOTER"
+			},
+			"noMeleePenalty" :
+			{
+				"type" : "NO_MELEE_PENALTY"
+			},
+			"nonLiving" : 
+			{
+				"type" : "NON_LIVING"
+			},
+			"immuneToMind" : 
+			{
+				"type" : "MIND_IMMUNITY"
+			},
+			"spellpoints" :
+			{
+				"type" : "CASTS",
+				"val" : 4
+			},
+			"castAttack" :
+			{
+				"type" : "SPELL_BEFORE_ATTACK",
+				"addInfo" : [0,0],
+				"subtype" : "spell.blazersSpell1",
+				"val" : 30
+			},
+			"castsBlazers2" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.blazersSpell2",
+				"val" : 0
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.attack"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},	
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.defence"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMax"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMin"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 2, 2, 2, 2, 3 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ADDITIONAL_RETALIATION"
+				},
+				"values" : [ 0, 0, 0, 0, 1, 1, 2, 2, 3, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "THREE_HEADED_ATTACK",
+				},
+				"values" : [ false, false, false, false, true, true, true, true, true, true ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_IMMUNITY",
+					"subtype" : "spell.blind"
+				},
+				"values" : [ false, false, false, false, false, true, true, true, true, true ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "FEARLESS"
+				},
+				"values" : [ false, false, false, false, true, true, true, true, true, true ]
+			}
+		]
+	}
+}

@@ -1,0 +1,133 @@
+{
+	"blv5up":
+	{
+		"name" :
+		{
+			"plural" : "魔剑大师",
+			"singular" : "魔剑大师"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 14,
+			 "min" : 8
+		},
+		"faction" : "blazers",
+		"aiValue" : 1000,
+		"attack" : 13,
+		"hasDoubleWeek" : true,
+                "cost" :
+		{
+			"gold" : 650
+		},
+		"damage" :
+		{
+			 "max" : 15,
+			 "min" : 13
+		},
+		"defense" : 13,
+		"fightValue" : 980,
+		"graphics" :
+		{
+			"animation" : "blazers/battle/blv5up.def",
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"map" : "blazers/map/blv5upmini.def",
+			"iconSmall" : "blazers/iconsSmall/blv5ups.bmp",
+			"iconLarge" : "blazers/iconsBig/blv5upl.bmp",
+			"timeBetweenFidgets" : 1
+        },
+		"growth" : 3,
+		"hitPoints" : 55,
+		"description" : "{技能说明}： \n{怒气}： 每回合攻防属性+2，随回合叠加。",
+		"level" : 5,
+		"sound" :
+		{
+			"attack" : "blazers/blv5ATTK.wav",
+			"defend" : "blazers/blv5DFND.wav",
+			"killed" : "blazers/blv5KILL.wav",
+			"move": "blazers/blv5MOVE.wav",
+			"wince" : "blazers/blv5WNCE.wav"
+		},
+		"speed" : 8,
+		"abilities" :
+		{
+		    "spellimmunityslow" :
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.slow"
+			},
+			"attackBooster":
+			{
+			"type" : "ENCHANTED",
+			"subtype" : "spell.blazersRage",
+			"val" : 3,
+			"addInfo" : 100
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.attack"
+				},
+				"values" : [ 1, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.defence"
+				},
+				"values" : [ 1, 2, 3, 3, 4, 4, 6, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMax"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMin"
+				},
+				"values" : [ 0, 1, 2, 3, 3, 4, 5, 6, 6, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_AFTER_ATTACK",
+					"subtype" : "spell.dispelHelpful",
+					"addInfo" : [3, 2]
+				},
+				"values" : [ 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 ]	
+			},
+			{
+				"bonus" :
+				{
+					"type" : "BLOCKS_RETALIATION"
+				},
+				"values" : [ false, false, false, false, false, false, true, true, true, true ]	
+			}
+		]
+	}
+}

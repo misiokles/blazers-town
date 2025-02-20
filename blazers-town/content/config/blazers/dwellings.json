@@ -1,0 +1,91 @@
+{
+	"core:creatureGeneratorCommon" : {
+		"types" : {
+			"blazers1" : {
+				"name" : "房舍",
+				"creatures" : [[ "blv1" ]],
+				"templates" : {
+					"default" : {
+						"animation" : "blazers/adventure-map/dwelling-1.def",
+						"mask" : [ "VVV", "VVB", "VBA" ]
+					}
+				}
+			},
+			"blazers2" : {
+				"name" : "眼魔巢穴",
+				"creatures" : [[ "blv2" ]],
+				"templates" : {
+					"default" : {
+						"animation" : "blazers/adventure-map/dwelling-2.def",
+						"mask" : [ "VVV", "VVV", "VAB" ]
+
+					}
+				}
+			},
+			"blazers3" : {
+				"name" : "光明神坛",
+				"creatures" : [[ "blazlv3" ]],
+				"templates" : {
+					"default" : {	
+						"animation" : "blazers/adventure-map/dwelling-3.def",
+						"mask" : [ "VVV", "VVV", "VAV" ]
+					}
+				}
+			},
+			"blazers4" : {
+				"name" : "魔法阁",
+				"creatures" : [[ "blv4" ]],
+				"templates" : {
+					"default" : {
+						"animation" : "blazers/adventure-map/dwelling-4.def",
+						"mask" : [ "VVV", "VVV", "VAV" ]
+					}
+				}
+			},
+			"blazers5" : {
+				"name" : "修武馆",
+				"creatures" : [[ "blv5" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "blazers/adventure-map/dwelling-5.def",
+						"mask" : [ "VVV", "VVV", "BAB" ]
+					}
+				}
+			},
+			"blazers6" : {
+				"name" : "角斗场",
+				"creatures" : [[ "blv6" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "blazers/adventure-map/dwelling-6.def",
+						"mask" : [ "VVV", "VVV", "BAB" ]
+					}
+				}
+			},
+			"blazers7" : {
+				"name" : "光翼神殿",
+				"creatures" : [[ "blv7" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "blazers/adventure-map/dwelling-7.def",
+						"mask" : [ "VVV", "VVV", "VAV" ]
+					}
+				}
+			},
+			"blazers8" : {
+				"name" : "守护神殿",
+				"creatures" : [[ "blv7b" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "blazers/adventure-map/dwelling-7b.def",
+						"mask" : [ "VVV", "VBB", "VAB" ]
+					}
+				}
+			}
+		}		
+	}
+}

@@ -1,0 +1,546 @@
+{
+	"blazers" :
+	{
+		"town" :
+		{
+			"buildings" :
+			{
+				"mageGuild1" :
+				{
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法",
+					"name" : "1级魔法行会",
+					"cost" :
+					{
+						"wood" : 5,
+						"ore" : 5,
+						"gold" : 2000
+					},
+					"id" : 0
+				},
+				"mageGuild2" :
+				{
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"name" : "2级魔法行会",
+					"cost" :
+					{
+						"wood" : 5,
+						"mercury" : 4,
+						"ore" : 5,
+						"sulfur" : 4,
+						"crystal" : 4,
+						"gems" : 4,
+						"gold" : 1000
+					},
+					"id" : 1,
+					"upgrades" : "mageGuild1"
+				},
+				"mageGuild3" :
+				{
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"name" : "3级魔法行会",
+					"cost" :
+					{
+						"wood" : 5,
+						"mercury" : 6,
+						"ore" : 5,
+						"sulfur" : 6,
+						"crystal" : 6,
+						"gems" : 6,
+						"gold" : 1000
+					},
+					"id" : 2,
+					"upgrades" : "mageGuild2"
+				},
+				"mageGuild4" : 
+				{
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"name" : "4级魔法行会",
+					"cost" :
+					{
+						"wood" : 5,
+						"mercury" : 8,
+						"ore" : 5,
+						"sulfur" : 8,
+						"crystal" : 8,
+						"gems" : 8,
+						"gold" : 1000
+					},
+					"id" : 3,
+					"upgrades" : "mageGuild3"
+				},
+				"mageGuild5" :
+				{
+					"description" : "进入魔法行会的来访英雄可以学会其中的魔法。",
+					"name" : "5级魔法行会",
+					"cost" :
+					{
+						"wood" : 5,
+						"mercury" : 10,
+						"ore" : 5,
+						"sulfur" : 10,
+						"crystal" : 10,
+						"gems" : 10,
+						"gold" : 1000
+					},
+					"id" : 4,
+					"upgrades" : "mageGuild4"
+				},
+				"tavern" :
+				{
+					"name" : "酒馆",
+					"description" : "酒馆可提高驻军的士气。",
+					"cost" :
+					{
+						"wood" : 5,
+						"gold" : 500
+					},
+					"id" : 5
+				},
+				"fort" :
+				{
+					"name" : "堡垒",
+					"description" : "堡垒可为你的城镇提供城墙。",
+					"cost" :
+					{
+						"wood" : 20,
+						"ore" : 20,
+						"gold" : 5000
+					},
+					"id" : 7
+				},
+				"citadel" :
+				{
+					"name" : "大本营",
+					"description" : "大本营不仅使生物的基本生长率提高50%，还能加强城镇的防御设施。",
+					"cost" :
+					{
+						"ore" : 5,
+						"gold" : 2500
+					},
+					"id" : 8,
+					"upgrades" : "fort"
+				},
+				"castle" :
+				{
+					"name" : "城堡",
+					"description" : "城堡可提供2座副箭塔以加强城镇的防御，而且还使生物的基本生长率加倍。",
+					"cost" :
+					{
+						"wood" : 10,
+						"ore" : 10,
+						"gold" : 5000
+					},
+					"id" : 9,
+					"upgrades" : "citadel"
+				},
+				"villageHall" :
+				{
+					"name" : "议事堂",
+					"description" : "议事堂可以让你购买城镇建筑，并每天向你提供500个金币。",
+					"id" : 10,
+					"mode" : "auto"
+				},
+				"townHall" :
+				{
+					"name" : "内政厅",
+					"description" : "内政厅可以让你购买城镇建筑，并每天向你提供1000个金币。",
+					"cost" :
+					{
+						"gold" : 2500
+					},
+					"id" : 11,
+					"requires" : [ "tavern" ],
+					"upgrades" : "villageHall"
+				},
+				"cityHall" :
+				{
+					"name" : "议会",
+					"description" : "议会可以让你购买城镇建筑并每天向你提供2000个金币。",
+					"cost" :
+					{
+						"gold" : 5000
+					},
+					"requires" : [ "allOf", [ "mageGuild1" ], [ "blacksmith" ], [ "marketplace" ] ],
+					"id" : 12,
+					"upgrades" : "townHall"
+				},
+				"capitol" :
+				{
+					"name" : "国会",
+					"description" : "国会每天向你提供4000个金币。",
+					"cost" :
+					{
+						"gold" : 10000
+					},
+					"id" : 13,
+					"requires" : [ "castle" ],
+					"upgrades" : "cityHall"
+				},
+				"marketplace" :
+				{
+					"name" : "市场",
+					"description" : "市场可让你交换资源(你所拥有的市场越多，价格越便宜)。",
+					"cost" :
+					{
+						"wood" : 5,
+						"gold" : 500
+					},
+					"id" : 14
+				},
+				"resourceSilo" :
+				{
+					"description" : "物资仓库每天为你额外提供1宝石。",
+					"name" : "物资仓库",
+					"cost" :
+					{
+						"ore" : 5,
+						"gold" : 5000
+					},
+					"requires" : [ "marketplace" ],
+					"produce": { "gems": 1 },
+					"id" : 15
+				},
+				"blacksmith" :
+				{
+					"description" : "铁匠铺可向你的军队提供弩炮。",
+					"name" : "铁匠铺",
+					"cost" :
+					{
+						"wood" : 5,
+						"gold" : 1000
+					},
+					"warMachine" : "ballista",
+					"id" : 16
+				},
+				"special1" :
+				{
+					"description" : "观察哨可扩大城镇周围的可视范围。",
+					"name" : "观察哨",
+					"cost" : {
+						"wood" : 5,
+						"gold" : 1000
+					},
+					"height" : "average",
+					"requires" : [ "fort" ],
+					"id" : 17
+				},
+				"special2" :
+				{
+					"name" : "坎儿井",
+					"description" : "坎儿井使来访英雄每天魔法回复值永久增加2点。",
+					"cost" :
+					{
+						"wood" : 5,
+						"ore" : 5,
+						"mercury" : 2,
+						"crystal" : 2,
+						"gems" : 2,
+						"sulfur" : 2,
+						"gold" : 1000
+					},
+					"requires" : [ "mageGuild1" ],
+						"configuration" : {
+						"visitMode" : "bonus",
+						"rewards" : [
+							{
+								"message" : "坎儿井使来访英雄每天魔法回复值永久增加2点。",
+								"bonuses" :  [ 
+									{
+										"duration": "PERMANENT",
+										"type": "MANA_REGENERATION",
+										"val": 2,
+										"propagator": "PLAYER_PROPAGATOR" 
+									}
+								]
+							}
+						]
+					},
+					"id" : 21
+				},
+				"special3": 
+				{
+					"description": "英灵峡谷使每个来访英雄的攻击力+1。",
+					"name": "英灵峡谷",
+					"requires": [ "fort" ],
+					"cost": {
+						"gold": 1000
+					},
+					"configuration" : {
+						"visitMode" : "hero",
+						"rewards" : [
+							{
+								"message" : "@core.genrltxt.584",
+								"primary" : { "attack" : 1 }
+							}
+						]
+					},
+					"id": 22
+				},
+                "horde1" :
+				{
+					"description" : "城建处使豹人的产量每周+7。",
+					"name" : "城建处",
+					"requires" : [ "allOf", ["fort"], ["dwellingLvl1"] ],
+					"upgrades" : "dwellingLvl1",
+					"cost" :
+					{
+						"gold" : 1000
+					},
+					"id" : 18			
+				},
+				"horde1Upg" :
+				{
+					"description" : "城建处使豹人精英的产量每周+7。",
+					"name" : "城建处",
+					"requires" : [ "horde1" ],
+					"upgrades" : "dwellingUpLvl1",
+					"cost" :
+					{
+						"gold" : 1000
+					},
+					"mode" : "auto",
+					"id" : 19			
+				},
+				"grail" :
+				{
+					"description" : "光神殿投影使每周的生物产量提高50%，每天为你的王国额外提供5000个金币，使己方所有生物免疫伤害和诅咒类气系魔法。",
+					"name" : "光神殿投影",
+					"mode" : "grail",
+					"bonuses": [
+						{
+						"propagator": "PLAYER_PROPAGATOR",
+						"type" : "SPELL_SCHOOL_IMMUNITY",
+						"subtype" : "spellSchool.air"
+				      	},
+						{
+						"propagator": "PLAYER_PROPAGATOR",
+						"type": "RECEPTIVE"
+				      	}
+					],
+					"id" : 26
+				},
+				"dwellingLvl1" :
+				{
+					"description" : "房舍允许你招募豹人。",
+					"name" : "房舍",
+					"cost" : {
+						"gold" : 1000,
+						"ore" : 5,
+						"wood" : 5
+					},
+					"requires" : [ "fort" ],
+					"id" : 30
+				},
+				"dwellingLvl2" :
+				{
+					"description" : "眼魔巢穴允许你招募飞翼眼魔。",
+					"name" : "眼魔巢穴",
+					"cost" : {
+						"gold" : 1500,
+						"ore" : 10
+					},
+					"requires" : ["fort"],
+					"id" : 31
+				},
+				"dwellingLvl3" :
+				{
+					"description" : "光明神坛允许你招募光元素。",
+					"name" : "光明神坛",
+					"cost" : {
+						"gold" : 2000,
+						"ore" : 5,
+						"wood" : 5
+					},
+					"requires" : [ "allOf", [ "mageGuild1" ] ],
+					"id" : 32
+				},
+				"dwellingLvl4" :
+				{
+					"description" : "魔法阁允许你招募玛雅法师",
+					"name" : "魔法阁",
+					"cost" : {
+						"gold" : 2000,
+						"ore" : 5,
+						"mercury" : 2,
+						"wood" : 5,
+						"crystal" : 2,
+						"gems" : 2,
+						"sulfur" : 2
+						},
+					"requires" : [ "allOf", [ "mageGuild1" ] ],
+					"id" : 33
+				},
+				"dwellingLvl5" :
+				{
+					"description" : "修武馆允许你招募魔剑痴。",
+					"name" : "修武馆",
+					"cost" : {
+						"gold" : 2500,
+						"ore" : 5,
+						"wood" : 5
+					},
+					"requires" : [ "allOf", [ "dwellingLvl3" ] ],
+					"id" : 34
+				},
+				"dwellingLvl6" :
+				{
+					"description" : "角斗场允许你招募光辉战士。",
+					"name" : "角斗场",
+					"cost" : {
+						"gold" : 5000,
+						"ore" : 5,
+						"mercury" : 3,
+						"wood" : 5,
+						"crystal" : 3,
+						"gems" : 3,
+						"sulfur" : 3
+					},
+					"requires" : [ "allOf", [ "dwellingLvl4" ] ],
+					"id" : 35
+				},
+				"dwellingLvl7" :
+				{
+					"description" : "光翼神殿允许你招募光翼神兵。",
+					"name" : "光翼神殿",
+					"cost" : {
+						"gold" : 15000,
+						"wood" : 5,
+						"mercury" : 5,
+						"ore" : 5,
+						"sulfur" : 5,
+						"crystal" : 5,
+						"gems" : 10
+					},
+					"requires" : [ 
+					    "allOf", [ "dwellingLvl5" ],[ "noneOf",[ "dwellingLvl7b"]]
+					],
+					"id" : 36
+				},
+				"dwellingUpLvl1" :
+				{
+					"description" : "高级房舍允许你招募豹人精英。",
+					"name" : "高级房舍",
+					"cost" : {
+						"gold" : 1000,
+						"wood" : 5,
+						"ore" : 5
+					},
+					"id" : 37,
+					"upgrades" : "dwellingLvl1"
+				},
+				"dwellingUpLvl2" :
+				{
+					"description" : "高级眼魔巢穴允许你招募浮游眼魔。",
+					"name" : "高级眼魔巢穴",
+					"cost" : {
+						"gold" : 1500,
+						"ore" : 5,
+						"wood" : 5
+					},
+					"id" : 38,
+					"upgrades" : "dwellingLvl2"
+				},
+				"dwellingUpLvl3" :
+				{
+					"description" : "高级光明神坛允许你招募圣辉元素。",
+					"name" : "高级光明神坛",
+					"cost" : {
+						"gold" : 1500,
+						"ore" : 5,
+						"wood" : 5
+					},
+					"id" : 39,
+					"upgrades" : "dwellingLvl3"
+				},
+				"dwellingUpLvl4" :
+				{
+					"description" : "高级魔法阁允许你招募玛雅大法师。",
+					"name" : "高级魔法阁",
+					"cost" : {
+						"mercury" : 5,
+						"ore" : 5,
+						"wood" : 5,
+						"crystal" : 5,
+						"gold" : 1500
+					},
+					"id" : 40,
+					"upgrades" : "dwellingLvl4"
+				},
+				"dwellingUpLvl5" :
+				{
+					"description" : "高级修武馆允许你招募魔剑大师。",
+					"name" : "高级修武馆",
+					"cost" : {
+						"gold" : 1800,
+						"wood" : 5,
+						"mercury" : 1,
+						"ore" : 5,
+						"sulfur" : 1,
+						"crystal" : 1,
+						"gems" : 1
+					},
+					"id" : 41,
+					"upgrades" : "dwellingLvl5"
+				},
+				"dwellingUpLvl6" :
+				{
+					"description" : "高级角斗场允许你招募炎阳战王。",
+					"name" : "高级角斗场",
+					"cost" : {
+						"ore" : 5,
+						"wood" : 5,
+						"gold" : 3000,
+						"sulfur" : 10
+					},
+					"id" : 42,
+					"requires" : [ "mageGuild2" ],
+					"upgrades" : "dwellingLvl6"
+				},
+				"dwellingUpLvl7" :
+				{
+					"description" : "高级光翼神殿允许你招募光翼神兵长。",
+					"name" : "高级光翼神殿",
+					"cost" : {
+						"ore" : 10,
+						"gold" : 15000,
+						"wood" : 10,
+						"gems" : 20
+					},
+					"id" : 43,
+					"requires" : [ "mageGuild2" ],
+					"upgrades" : "dwellingLvl7"
+				},
+				"dwellingLvl7b" :
+				{
+					"description" : "守护神殿允许你招募神殿护卫。",
+					"name" : "守护神殿",
+					"cost" : {
+						"gold" : 10000,
+						"wood" : 10,
+						"ore" : 10,
+						"gems" : 10
+					},
+					"id" : 50,
+					"requires" : [ 
+					    "allOf", [ "dwellingLvl6" ],[ "noneOf",[ "dwellingLvl7"]]
+					]
+				},
+				"dwellingUpLvl7b" :
+				{
+					"description" : "高级守护神殿允许你招募神殿圣卫。",
+					"name" : "高级守护神殿",
+					"cost" : {
+						"ore" : 10,
+						"gold" : 15000,
+						"wood" : 10,
+						"gems" : 20
+					},
+					"id" : 57,
+					"requires" : [ "mageGuild2" ],
+					"upgrades" : "dwellingLvl7b"
+				}
+			}
+		}
+	}
+}
+

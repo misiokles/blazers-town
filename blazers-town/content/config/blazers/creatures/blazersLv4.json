@@ -1,0 +1,177 @@
+{
+	"blv4":
+	{
+		"name" :
+		{
+			"plural" : "玛雅法师",
+			"singular" : "玛雅法师"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 20,
+			 "min" : 10
+		},
+		"faction" : "blazers",
+		"aiValue" : 662,
+		"attack" : 10,
+		"cost" :
+		{
+			"gold" : 360
+			
+		},
+		"damage" :
+		{
+			 "max" : 9,
+			 "min" : 7
+		},
+		"defense" : 11,
+		"fightValue" : 620,
+		"graphics" :
+		{
+			"animation" : "blazers/battle/blv4.DEF",
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"map" : "blazers/map/blv4mini.def",
+			"iconSmall" : "blazers/iconsSmall/blv4s.bmp",
+			"iconLarge" : "blazers/iconsBig/blv4l.bmp",
+			"timeBetweenFidgets" : 1,
+			"missile" :
+			{
+				"projectile": "PMAGEX.DEF",
+				"attackClimaxFrame" : 12,
+				"offset" :
+				{
+					"upperX" : 38,
+					"upperY" : -65,
+					"middleX" : 36,
+					"middleY" : -59,
+					"lowerX" : 21,
+					"lowerY" : -50
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}
+		},
+		"growth" : 4,
+		"hitPoints" : 30,
+		"level" : 4,
+		"upgrades":
+		[
+			"blv4up"
+		],
+		"shots" : 12,		
+		"sound" :
+		{
+			"attack": "AMAGATTK.wav",
+			"defend": "AMAGDFND.wav",
+			"killed": "AMAGKILL.wav",
+			"move": "AMAGMOVE.wav",
+			"shoot": "AMAGSHOT.wav",
+			"wince": "AMAGWNCE.wav" 
+		},
+		"speed" : 6,
+		"abilities" :
+		{
+			"canshoot" :
+			{
+				"type" : "SHOOTER"
+			},
+			"castsSlow" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.frenzy",
+				"val" : 2
+			},
+			"spellpoints" :
+			{
+				"type" : "CASTS",
+				"val" : 2
+			},
+			"noRetaliation" : 
+			{
+				"type" : "BLOCKS_RANGED_RETALIATION"
+			},
+			"hate1" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.hotaGunman",
+				"val" : 100
+			},
+			"hate2" : 
+			{
+				"type" : "HATE",
+				"subtype" : "creature.hotaGunmanUp",
+				"val" : 100
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.attack"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.defence"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMax"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMin"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "MIND_IMMUNITY" 
+				},
+				"values" : [ false, false, false, false, true, true, true, true, true, true ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "NO_WALL_PENALTY" 
+				},
+				"values" : [ false, false, true, true, true, true, true, true, true, true ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "NO_DISTANCE_PENALTY" 
+				},
+				"values" : [ false, false, false, false, false, false, true, true, true, true ]
+			}
+		]
+	}
+}

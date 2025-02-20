@@ -1,0 +1,76 @@
+{
+	"blaBrebar" :
+	{
+		"class" : "brightWizard",
+		"female" : false,
+
+		"images" :
+		{
+			
+			"specialtySmall" : "blazers/heroes/hero03Brebar/spec-small.png",
+			"specialtyLarge" : "blazers/heroes/hero03Brebar/spec-large.png",
+			"large" : "blazers/heroes/hero03Brebar/portrait-large.png",
+			"small" : "blazers/heroes/hero03Brebar/portrait-small.png"
+		},
+
+		"spellbook" :
+		[
+			"shield"
+		],
+
+
+		"army" :
+		[
+			{
+				"creature" : "blazlv3",
+				"max" : 6,
+				"min" : 5
+			},
+			{
+				"creature" : "blazlv3",
+				"max" : 5,
+				"min" : 4
+			},
+			{
+				"creature" : "blazlv3",
+				"max" : 4,
+				"min" : 3
+			},
+		],
+
+		"skills" : 
+		[
+			{
+				"level" : "basic",
+				"skill" : "earthMagic"
+			},
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			}
+		],
+		
+		"texts" :
+		{
+			"name" : "布雷巴尔",
+			"biography" : "人们对这位英雄知之甚少。",
+			"specialty" :
+			{
+				"name" : "护体神盾",
+				"description" : "{护体神盾}\r\n\r\n使用护体神盾魔法时效果大增。",
+				"tooltip" : "S魔法增强：护体神盾"
+			}
+		},
+		
+		"specialty" : {
+			"bonuses" : {
+				"shield" : {
+				    "subtype" : "spell.shield",
+				    "type" : "SPECIAL_SPELL_LEV",
+				    "updater" : "TIMES_HERO_LEVEL",
+				    "val" : 3
+			    }
+			}
+		}
+	}
+}
