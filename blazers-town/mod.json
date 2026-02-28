@@ -3,7 +3,7 @@
 	"description" : "Blazers Town",
 	"author" : "红枫居士, Olegmods.INC (T7 def author)",
 	"contact" : "http://forum.vcmi.eu/index.php",
-	"version" : "1.01",
+	"version" : "1.02",
 	"modType" : "Town",
 	"language": "chinese",
 	"depends": ["hota.factory"],
@@ -12,7 +12,14 @@
 		"name": "开拓团",
 		"description": "新城镇开拓团"
 	},
-
+	"english":
+	{
+		"name": "Blazers town",
+		"description": "Blazers town",
+		"translations": [
+			"config/blazers/english.json"
+		]
+	},
 	"factions" :
 	[
 		"config/blazers/town/buildings.json",
