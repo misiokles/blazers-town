@@ -65,19 +65,20 @@
 			},
 			"fearless" :
 			{
-				"type" : "FEARLESS"
-			},
+				"type" : "FEARFUL",
+				"valueType" : "AT_MOST",
+				"val" : 0},
 			"selfluck" : 
 			{ 
 				"type" : "LUCK",
 	            "val" : 2,
-	            "valueType" : "INDEPENDENT_MAX"
+	            "valueType" : "AT_LEAST"
 			},
 			"selfmorale" :
 			{
 				"type" : "MORALE",
 				"val" : 2,
-				"valueType" : "INDEPENDENT_MAX"
+				"valueType" : "AT_LEAST"
 			},
 			"spellpoints" :
 			{

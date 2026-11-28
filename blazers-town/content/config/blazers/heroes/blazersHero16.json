@@ -66,8 +66,8 @@
 				"firstAid2" :{
 						"type" : "STACK_HEALTH",
 						"val" : 225,
-						"propagator" : "PLAYER_PROPAGATOR",
-						"limiters" : [ {"type" : "CREATURE_TYPE_LIMITER", "parameters" : [ "firstAidTent", true]	} ]
+						"propagator" : "PLAYER",
+						"limiters" : [ {"type": "CREATURE_TYPE_LIMITER", "creature": "firstAidTent", "includeUpgrades": true} ]
 				},
 			}
 		}

@@ -56,12 +56,7 @@
 				"subtype" : "spell.slow"
 			},
 			"attackBooster":
-			{
-			"type" : "ENCHANTED",
-			"subtype" : "spell.blazersRage",
-			"val" : 3,
-			"addInfo" : 100
-			}
+			{"type": "COMBAT_EVENT_TRIGGER", "subtype": "enchanted", "val": 3, "addInfo": {"spell": "spell.blazersRage", "massive": false}}
 		},
 		"stackExperience" :
 		[

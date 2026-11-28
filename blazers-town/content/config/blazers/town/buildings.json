@@ -249,7 +249,7 @@
 										"duration": "PERMANENT",
 										"type": "MANA_REGENERATION",
 										"val": 2,
-										"propagator": "PLAYER_PROPAGATOR" 
+										"propagator": "PLAYER" 
 									}
 								]
 							}
@@ -308,12 +308,12 @@
 					"mode" : "grail",
 					"bonuses": [
 						{
-						"propagator": "PLAYER_PROPAGATOR",
+						"propagator": "PLAYER",
 						"type" : "SPELL_SCHOOL_IMMUNITY",
 						"subtype" : "spellSchool.air"
 				      	},
 						{
-						"propagator": "PLAYER_PROPAGATOR",
+						"propagator": "PLAYER",
 						"type": "RECEPTIVE"
 				      	}
 					],

@@ -1,9 +1,18 @@
 {
+	"changelog" : {
+		"1.03" : [
+			"VCMI 1.8 JSON migration: Updated bonus value types: INDEPENDENT_MAX -> AT_LEAST.",
+			"Migrated Enchanted to COMBAT_EVENT_TRIGGER definitions.",
+			"Migrated Fearless to FEARFUL with AT_MOST 0.",
+			"Updated bonus propagators: PLAYER_PROPAGATOR -> PLAYER.",
+			"Updated creature limiters to named creature and includeUpgrades fields."
+		]
+	},
 	"name" : "blazers",
 	"description" : "Blazers Town",
 	"author" : "红枫居士, Olegmods.INC (T7 def author)",
 	"contact" : "http://forum.vcmi.eu/index.php",
-	"version" : "1.02",
+	"version" : "1.03",
 	"modType" : "Town",
 	"language": "chinese",
 	"depends": ["hota.factory"],
