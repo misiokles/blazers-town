@@ -14,38 +14,35 @@
 	"contact" : "http://forum.vcmi.eu/index.php",
 	"version" : "1.03",
 	"modType" : "Town",
-	"language": "chinese",
-	"depends": ["hota.factory"],
-	"chinese":
-	{
-		"name": "开拓团",
-		"description": "新城镇开拓团"
+	"language" : "chinese",
+	"depends" : [
+		"hota.factory"
+	],
+	"chinese" : {
+		"name" : "开拓团",
+		"description" : "新城镇开拓团"
 	},
-	"english":
-	{
-		"name": "Blazers town",
-		"description": "Blazers town",
-		"translations": [
+	"english" : {
+		"name" : "Blazers town",
+		"description" : "Blazers town",
+		"translations" : [
 			"config/blazers/english.json"
 		]
 	},
-	"factions" :
-	[
+	"factions" : [
 		"config/blazers/town/buildings.json",
 		"config/blazers/town/faction.json",
 		"config/blazers/town/siege.json",
 		"config/blazers/town/spells.json",
 		"config/blazers/town/structures.json",
 		"config/blazers/town/puzzle.json"
-
 	],
-	"creatures" :
-	[
+	"creatures" : [
 		"config/blazers/creatures/blazersLv1.json",
 		"config/blazers/creatures/blazersLv1up.json",
 		"config/blazers/creatures/blazersLv2.json",
 		"config/blazers/creatures/blazersLv2up.json",
-        "config/blazers/creatures/blazerslv3.json",
+		"config/blazers/creatures/blazerslv3.json",
 		"config/blazers/creatures/blazerslv3up.json",
 		"config/blazers/creatures/blazersLv4.json",
 		"config/blazers/creatures/blazersLv4up.json",
@@ -58,17 +55,13 @@
 		"config/blazers/creatures/blazersCommander.json",
 		"config/blazers/creatures/blazersLv7b.json",
 		"config/blazers/creatures/blazersLv7upb.json"
-
 	],
-	"heroClasses" :
-	[
+	"heroClasses" : [
 		"config/blazers/heroes/honorWarrior.json",
 		"config/blazers/heroes/brightWizard.json"
-
 	],
 
-	"heroes" :
-	[
+	"heroes" : [
 		"config/blazers/heroes/blazersHero01.json",
 		"config/blazers/heroes/blazersHero02.json",
 		"config/blazers/heroes/blazersHero03.json",
@@ -86,13 +79,14 @@
 		"config/blazers/heroes/blazersHero15.json",
 		"config/blazers/heroes/blazersHero16.json"
 	],
-	"spells" :
-	[
+	"spells" : [
 		"config/blazers/spells/blazersSpell1.json",
 		"config/blazers/spells/blazersSpell2.json",
 		"config/blazers/spells/blazersSpell3.json",
 		"config/blazers/spells/blazersSpell4.json",
 		"config/blazers/spells/blazersRage.json"
 	],
-	"objects" : [ "config/blazers/dwellings.json" ]
+	"objects" : [
+		"config/blazers/dwellings.json"
+	]
 }

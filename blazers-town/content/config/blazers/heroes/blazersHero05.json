@@ -1,22 +1,18 @@
 {
-	"blaTara" :
-	{
+	"blaTara" : {
 		"class" : "brightWizard",
 		"female" : true,
-		"images" :
-		{
+		"images" : {
 			"specialtySmall" : "blazers/heroes/hero05Tara/spec-small.png",
 			"specialtyLarge" : "blazers/heroes/hero05Tara/spec-large.png",
 			"large" : "blazers/heroes/hero05Tara/portrait-large.png",
 			"small" : "blazers/heroes/hero05Tara/portrait-small.png"
 		},
 
-		"spellbook" :
-		[
+		"spellbook" : [
 			"haste"
 		],
-		"army" :
-		[
+		"army" : [
 			{
 				"creature" : "blv1",
 				"max" : 30,
@@ -34,8 +30,7 @@
 			}
 		],
 
-		"skills" :
-		[
+		"skills" : [
 			{
 				"level" : "basic",
 				"skill" : "mysticism"
@@ -45,20 +40,18 @@
 				"skill" : "learning"
 			}
 		],
-		"texts" :
-		{
+		"texts" : {
 			"name" : "泰拉",
 			"biography" : "人们对这位英雄知之甚少。",
-			"specialty" :
-			{
+			"specialty" : {
 				"name" : "神秘术",
 				"description" : "在神秘术上每级得到5%的额外奖励。",
 				"tooltip" : "技能加成：神秘术"
 			}
 		},
-		
+
 		"specialty" : {
-			"bonuses":{
+			"bonuses" : {
 				"mysticism" : {
 					"targetSourceType" : "SECONDARY_SKILL",
 					"type" : "MANA_REGENERATION",
@@ -66,7 +59,7 @@
 					"val" : 5,
 					"valueType" : "PERCENT_TO_TARGET_TYPE"
 				}
-			}	
+			}
 		}
 	}
 }

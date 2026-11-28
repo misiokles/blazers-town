@@ -1,24 +1,20 @@
 {
-	"blaNesta" :
-	{
+	"blaNesta" : {
 		"class" : "brightWizard",
 		"female" : true,
 
-		"images" :
-		{
+		"images" : {
 			"specialtySmall" : "blazers/heroes/hero02Nesta/spec-small.png",
 			"specialtyLarge" : "blazers/heroes/hero02Nesta/spec-large.png",
 			"large" : "blazers/heroes/hero02Nesta/portrait-large.png",
 			"small" : "blazers/heroes/hero02Nesta/portrait-small.png"
 		},
 
-		"spellbook" :
-		[
-		       "antiMagic"
+		"spellbook" : [
+			"antiMagic"
 		],
 
-		"army" :
-		[
+		"army" : [
 			{
 				"creature" : "blv1",
 				"max" : 30,
@@ -36,8 +32,7 @@
 			}
 		],
 
-		"skills" :
-		[
+		"skills" : [
 			{
 				"level" : "basic",
 				"skill" : "wisdom"
@@ -47,29 +42,33 @@
 				"skill" : "sorcery"
 			}
 		],
-		
-		"texts" :
-		{
+
+		"texts" : {
 			"name" : "奈斯塔",
 			"biography" : "人们对这位英雄知之甚少。",
-			"specialty" :
-			{
+			"specialty" : {
 				"name" : "魔法伤害减免",
 				"description" : "本族生物魔法伤害减免25%。",
 				"tooltip" : "特殊奖励：魔法伤害减免"
 			}
 		},
-		
-		"specialty": {
-			"bonuses": {
-				"spellDamage": {	
-					"limiters" : [ { "parameters" : ["blazers"], "type" : "CREATURE_FACTION_LIMITER" } ],
+
+		"specialty" : {
+			"bonuses" : {
+				"spellDamage" : {
+					"limiters" : [
+						{
+							"parameters" : [
+								"blazers"
+							],
+							"type" : "CREATURE_FACTION_LIMITER"
+						}
+					],
 					"type" : "SPELL_DAMAGE_REDUCTION",
-				    "subtype" :"spellSchool.any",
-				    "val" : 25
+					"subtype" : "spellSchool.any",
+					"val" : 25
 				}
 			}
 		}
 	}
 }
-

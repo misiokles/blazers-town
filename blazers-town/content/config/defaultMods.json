@@ -1,8 +1,7 @@
 // default configuration for mod system loaded at launch
 
 {
-	"hardcodedFeatures" :
-	{
+	"hardcodedFeatures" : {
 		"NEGATIVE_LUCK" : true
 	}
 }

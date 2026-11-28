@@ -1,13 +1,10 @@
 {
-	"blv6up":
-	{
-		"name" :
-		{
+	"blv6up" : {
+		"name" : {
 			"plural" : "炎阳战王",
 			"singular" : "炎阳战王"
 		},
-		"advMapAmount" :
-		{
+		"advMapAmount" : {
 			"max" : 10,
 			"min" : 5
 		},
@@ -15,138 +12,222 @@
 		"aiValue" : 2180,
 		"attack" : 16,
 		"hasDoubleWeek" : true,
-        "cost" : 
-		{
+		"cost" : {
 			"gold" : 1200
 		},
-		"damage" :
-		{
+		"damage" : {
 			"max" : 25,
 			"min" : 18
 		},
 		"defense" : 16,
 		"fightValue" : 1888,
-		"graphics" :
-		{
+		"graphics" : {
 			"animation" : "blazers/battle/blv6up.def",
-			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"animationTime" : {
+				"attack" : 1,
+				"idle" : 10,
+				"walk" : 1
+			},
 			"map" : "blazers/map/blv6upmini.def",
 			"iconSmall" : "blazers/iconsSmall/blv6ups.bmp",
 			"iconLarge" : "blazers/iconsBig/blv6upl.bmp",
-			"timeBetweenFidgets" : 1,
+			"timeBetweenFidgets" : 1
 		},
 		"doubleWide" : false,
 		"growth" : 2,
 		"hitPoints" : 100,
 		"level" : 6,
-		"sound" :
-		{
-			"attack": "CRUSATTK.wav",
-			"defend": "CRUSDFND.wav",
-			"killed": "CRUSKILL.wav",
-			"move": "CRUSMOVE.wav",
-			"wince": "CRUSWNCE.wav"   
+		"sound" : {
+			"attack" : "CRUSATTK.wav",
+			"defend" : "CRUSDFND.wav",
+			"killed" : "CRUSKILL.wav",
+			"move" : "CRUSMOVE.wav",
+			"wince" : "CRUSWNCE.wav"
 		},
 		"speed" : 10,
-		"abilities" :
-		{
-			"magicResistance" :
-			{
+		"abilities" : {
+			"magicResistance" : {
 				"type" : "MAGIC_RESISTANCE",
 				"val" : 30
 			},
-			"immuneToFire" :
-			{
+			"immuneToFire" : {
 				"subtype" : "spellSchool.fire",
 				"type" : "SPELL_SCHOOL_IMMUNITY"
 			},
-			"receptive":
-			{
-				"type": "RECEPTIVE"
+			"receptive" : {
+				"type" : "RECEPTIVE"
 			},
-			"attackSpell" : 
-			{
+			"attackSpell" : {
 				"type" : "SPELL_AFTER_ATTACK",
 				"subtype" : "spell.fireball",
 				"val" : 100
 			},
-			"punishStrength" :
-			{
+			"punishStrength" : {
 				"type" : "SPECIFIC_SPELL_POWER",
 				"subtype" : "spell.fireball",
 				"val" : 5
 			}
 		},
-		"stackExperience" :
-		[
+		"stackExperience" : [
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "PRIMARY_SKILL",
 					"subtype" : "primarySkill.attack"
 				},
-				"values" : [ 1, 2, 3, 4, 4, 5, 6, 7, 8, 9 ]
-			},	
+				"values" : [
+					1,
+					2,
+					3,
+					4,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9
+				]
+			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "PRIMARY_SKILL",
 					"subtype" : "primarySkill.defence"
 				},
-				"values" : [ 1, 2, 2, 3, 4, 5, 6, 7, 8, 9 ]
+				"values" : [
+					1,
+					2,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "CREATURE_DAMAGE",
 					"subtype" : "creatureDamageMax"
 				},
-				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 8, 9 ]
+				"values" : [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					8,
+					9
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "CREATURE_DAMAGE",
 					"subtype" : "creatureDamageMin"
 				},
-				"values" : [ 0, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+				"values" : [
+					0,
+					1,
+					2,
+					3,
+					4,
+					5,
+					5,
+					6,
+					7,
+					8
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"valueType" : "PERCENT_TO_BASE",
 					"type" : "STACK_HEALTH"
 				},
-				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+				"values" : [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "STACKS_SPEED"
 				},
-				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2 ]
+				"values" : [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					2
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "FEARFUL",
 					"valueType" : "AT_MOST",
-					"val" : 0},
-				"values" : [ false, false, false, false, true, true, true, true, true, true ]
+					"val" : 0
+				},
+				"values" : [
+					false,
+					false,
+					false,
+					false,
+					true,
+					true,
+					true,
+					true,
+					true,
+					true
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "ADDITIONAL_RETALIATION"
 				},
-				"values" : [ 0, 0, 0, 0, 1, 1, 2, 2, 3, 4 ]
+				"values" : [
+					0,
+					0,
+					0,
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					4
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "DOUBLE_DAMAGE_CHANCE"
 				},
-				"values" : [ 1, 2, 3, 4, 5, 10, 15, 20, 25, 30 ]
+				"values" : [
+					1,
+					2,
+					3,
+					4,
+					5,
+					10,
+					15,
+					20,
+					25,
+					30
+				]
 			}
 		]
 	}

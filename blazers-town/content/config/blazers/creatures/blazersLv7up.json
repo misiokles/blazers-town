@@ -1,35 +1,33 @@
 {
-	"blv7up":
-	{
-		"name" :
-		{
+	"blv7up" : {
+		"name" : {
 			"plural" : "光翼神兵长",
 			"singular" : "光翼神兵长"
 		},
-		"advMapAmount" :
-		{
+		"advMapAmount" : {
 			"max" : 8,
 			"min" : 3
 		},
 		"faction" : "blazers",
 		"aiValue" : 8000,
 		"attack" : 24,
-		"cost" :
-		{
+		"cost" : {
 			"gold" : 4000,
 			"gems" : 2
 		},
-		"damage" :
-		{
+		"damage" : {
 			"max" : 50,
 			"min" : 40
 		},
 		"defense" : 24,
 		"fightValue" : 5935,
-		"graphics" :
-		{
+		"graphics" : {
 			"animation" : "blazers/battle/blv7up.def",
-			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"animationTime" : {
+				"attack" : 1,
+				"idle" : 10,
+				"walk" : 1
+			},
 			"map" : "blazers/map/blv7upmini.def",
 			"iconSmall" : "blazers/iconsSmall/blv7ups.bmp",
 			"iconLarge" : "blazers/iconsBig/blv7upl.bmp",
@@ -40,139 +38,224 @@
 		"growth" : 1,
 		"hitPoints" : 250,
 		"level" : 7,
-		"sound" :
-		{
-			"attack": "AAGLATTK.wav",
-			"defend": "AAGLDFND.wav",
-			"killed": "AAGLKILL.wav",
-			"move": "AAGLMOVE.wav",
-			"wince": "AAGLWNCE.wav",
-            "startMoving": "blazers/blv7EXT1.wav",
-			"endMoving": "blazers/blv7EXT2.wav"			
+		"sound" : {
+			"attack" : "AAGLATTK.wav",
+			"defend" : "AAGLDFND.wav",
+			"killed" : "AAGLKILL.wav",
+			"move" : "AAGLMOVE.wav",
+			"wince" : "AAGLWNCE.wav",
+			"startMoving" : "blazers/blv7EXT1.wav",
+			"endMoving" : "blazers/blv7EXT2.wav"
 		},
 		"speed" : 17,
-		"abilities" :
-		{
-			"Slayer" : { "type" : "KING", "val": 2 },
-			"flying" :
-			{
-				"type": "FLYING",
+		"abilities" : {
+			"Slayer" : {
+				"type" : "KING",
+				"val" : 2
+			},
+			"flying" : {
+				"type" : "FLYING",
 				"subtype" : "movementTeleporting"
 			},
-			"fearless" :
-                        {
+			"fearless" : {
 				"type" : "FEARFUL",
 				"valueType" : "AT_MOST",
 				"val" : 0
 			},
-			"selfluck" : 
-			{ 
+			"selfluck" : {
 				"type" : "LUCK",
-	            "val" : 3,
-	            "valueType" : "AT_LEAST"
+				"val" : 3,
+				"valueType" : "AT_LEAST"
 			},
-			"selfmorale" :
-			{
+			"selfmorale" : {
 				"type" : "MORALE",
 				"val" : 3,
 				"valueType" : "AT_LEAST"
 			},
-			"castCall" :
-			{
+			"castCall" : {
 				"type" : "SPELL_BEFORE_ATTACK",
-				"addInfo" : [0,2],
+				"addInfo" : [
+					0,
+					2
+				],
 				"subtype" : "spell.blazersSpell4",
 				"val" : 40
 			},
-			"spellpower" :
-			{
+			"spellpower" : {
 				"type" : "CREATURE_SPELL_POWER",
 				"val" : 250
 			},
-			"spellpoints" :
-			{
+			"spellpoints" : {
 				"type" : "CASTS",
 				"val" : 3
 			},
-			"castsBlazers" :
-			{
+			"castsBlazers" : {
 				"type" : "SPELLCASTER",
 				"subtype" : "spell.blazersSpell3",
 				"val" : 1
 			}
 		},
-		"stackExperience" :
-		[
+		"stackExperience" : [
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "PRIMARY_SKILL",
 					"subtype" : "primarySkill.attack"
 				},
-				"values" : [ 1, 2, 3, 4, 4, 5, 6, 7, 8, 9 ]
-			},	
+				"values" : [
+					1,
+					2,
+					3,
+					4,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9
+				]
+			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "PRIMARY_SKILL",
 					"subtype" : "primarySkill.defence"
 				},
-				"values" : [ 1, 2, 2, 3, 4, 5, 6, 7, 8, 9 ]
+				"values" : [
+					1,
+					2,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "CREATURE_DAMAGE",
 					"subtype" : "creatureDamageMax"
 				},
-				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+				"values" : [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "CREATURE_DAMAGE",
 					"subtype" : "creatureDamageMin"
 				},
-				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+				"values" : [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"valueType" : "PERCENT_TO_BASE",
 					"type" : "STACK_HEALTH"
 				},
-				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+				"values" : [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "STACKS_SPEED"
 				},
-				"values" : [ 0, 0, 1, 1, 2, 2, 3, 3, 3, 4 ]
+				"values" : [
+					0,
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					3,
+					4
+				]
 			},
 			{
-				"bonus" : 
-				{
+				"bonus" : {
 					"type" : "SPELL_IMMUNITY",
 					"subtype" : "spell.blind"
 				},
-				"values" : [ false, false, true, true, true, true, true, true, true, true ]
+				"values" : [
+					false,
+					false,
+					true,
+					true,
+					true,
+					true,
+					true,
+					true,
+					true,
+					true
+				]
 			},
 			{
-				"bonus" : 
-				{
+				"bonus" : {
 					"type" : "SPELL_IMMUNITY",
 					"subtype" : "spell.berserk"
 				},
-				"values" : [ false, false, false, false, false, false, true, true, true, true ]
+				"values" : [
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					true,
+					true,
+					true,
+					true
+				]
 			},
 			{
-				"bonus" : 
-				{
+				"bonus" : {
 					"type" : "SPELL_IMMUNITY",
 					"subtype" : "spell.hypnotize"
 				},
-				"values" : [ false, false, false, false, true, true, true, true, true, true ]
+				"values" : [
+					false,
+					false,
+					false,
+					false,
+					true,
+					true,
+					true,
+					true,
+					true,
+					true
+				]
 			}
 		]
 	}

@@ -1,18 +1,15 @@
 {
-	"blaLarryella" :
-	{
+	"blaLarryella" : {
 		"class" : "honorWarrior",
 		"female" : true,
-		"images" :
-		{
+		"images" : {
 			"specialtySmall" : "blazers/heroes/hero12Larryella/spec-small.png",
 			"specialtyLarge" : "blazers/heroes/hero12Larryella/spec-large.png",
 			"large" : "blazers/heroes/hero12Larryella/portrait-large.png",
 			"small" : "blazers/heroes/hero12Larryella/portrait-small.png"
 		},
-		
-		"army" :
-		[
+
+		"army" : [
 			{
 				"creature" : "blazlv3",
 				"max" : 5,
@@ -30,8 +27,7 @@
 			}
 		],
 
-		"skills" :
-		[
+		"skills" : [
 			{
 				"level" : "basic",
 				"skill" : "logistics"
@@ -41,12 +37,10 @@
 				"skill" : "offence"
 			}
 		],
-		"texts" :
-		{
+		"texts" : {
 			"name" : "拉里埃拉",
 			"biography" : "人们对这位英雄知之甚少。",
-			"specialty" :
-			{
+			"specialty" : {
 				"description" : "{光元素}\r\n\r\n达到3级以后提高光元素或圣辉元素的攻击力与防御力.",
 				"name" : "光元素",
 				"tooltip" : "生物强化：光元素"

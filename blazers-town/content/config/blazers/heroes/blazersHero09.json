@@ -1,18 +1,15 @@
 {
-	"blaSenas" :
-	{
+	"blaSenas" : {
 		"class" : "honorWarrior",
 		"female" : false,
 
-		"images" :
-		{
+		"images" : {
 			"specialtySmall" : "blazers/heroes/hero09Senas/spec-small.png",
 			"specialtyLarge" : "blazers/heroes/hero09Senas/spec-large.png",
 			"large" : "blazers/heroes/hero09Senas/portrait-large.png",
 			"small" : "blazers/heroes/hero09Senas/portrait-small.png"
 		},
-		"army" :
-		[
+		"army" : [
 			{
 				"creature" : "blv1",
 				"max" : 30,
@@ -40,37 +37,33 @@
 				"skill" : "armorer"
 			}
 		],
-		"texts" :
-		{
+		"texts" : {
 			"name" : "赛纳斯",
 			"biography" : "人们对这位英雄知之甚少。",
-			"specialty" :
-			{
+			"specialty" : {
 				"description" : "英雄率领的所有生物攻击+2、防御+2、速度+1，攻防数值直接加到英雄攻击力和防御力上。",
 				"name" : "统帅",
 				"tooltip" : "特殊奖励：统帅"
 			}
 		},
-		
+
 		"specialty" : {
 			"bonuses" : {
 				"speed" : {
 					"type" : "STACKS_SPEED",
 					"val" : 1
 				},
-				"attack":
-				{
-					"type": "PRIMARY_SKILL",
+				"attack" : {
+					"type" : "PRIMARY_SKILL",
 					"subtype" : "primarySkill.attack",
 					"val" : 2,
-					"valueType": "BASE_NUMBER"
+					"valueType" : "BASE_NUMBER"
 				},
-				"defence":
-				{
-					"type": "PRIMARY_SKILL",
+				"defence" : {
+					"type" : "PRIMARY_SKILL",
 					"subtype" : "primarySkill.defence",
 					"val" : 2,
-					"valueType": "BASE_NUMBER"
+					"valueType" : "BASE_NUMBER"
 				}
 			}
 		}

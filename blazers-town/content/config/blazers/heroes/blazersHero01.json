@@ -1,22 +1,18 @@
 {
-	"blaGary" :
-	{
+	"blaGary" : {
 		"class" : "brightWizard",
 		"female" : true,
-		"images" :
-		{
+		"images" : {
 			"specialtySmall" : "blazers/heroes/hero01Gary/spec-small.png",
 			"specialtyLarge" : "blazers/heroes/hero01Gary/spec-large.png",
 			"large" : "blazers/heroes/hero01Gary/portrait-large.png",
 			"small" : "blazers/heroes/hero01Gary/portrait-small.png"
 		},
 
-		"spellbook" :
-		[
+		"spellbook" : [
 			"disruptingRay"
 		],
-		"army" :
-		[
+		"army" : [
 			{
 				"creature" : "blv1",
 				"max" : 30,
@@ -34,8 +30,7 @@
 			}
 		],
 
-		"skills" :
-		[
+		"skills" : [
 			{
 				"level" : "basic",
 				"skill" : "intelligence"
@@ -45,18 +40,16 @@
 				"skill" : "wisdom"
 			}
 		],
-		"texts" :
-		{
+		"texts" : {
 			"name" : "盖利",
 			"biography" : "人们对这位英雄知之甚少。",
-			"specialty" :
-			{
+			"specialty" : {
 				"name" : "智力",
 				"description" : "在智力技能上每级得到5%的额外奖励。",
 				"tooltip" : "技能加成：智力"
 			}
 		},
-		
+
 		"specialty" : {
 			"bonuses" : {
 				"intelligence" : {

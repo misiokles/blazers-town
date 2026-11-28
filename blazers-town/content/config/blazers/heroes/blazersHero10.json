@@ -1,19 +1,16 @@
 {
-	"blaTimfur" :
-	{
+	"blaTimfur" : {
 		"class" : "honorWarrior",
 		"female" : false,
 
-		"images" :
-		{
+		"images" : {
 			"specialtySmall" : "blazers/heroes/hero10Timfur/spec-small.png",
 			"specialtyLarge" : "blazers/heroes/hero10Timfur/spec-large.png",
 			"large" : "blazers/heroes/hero10Timfur/portrait-large.png",
 			"small" : "blazers/heroes/hero10Timfur/portrait-small.png"
 		},
 
-		"army" :
-		[
+		"army" : [
 			{
 				"creature" : "blv1",
 				"max" : 30,
@@ -31,8 +28,7 @@
 			}
 		],
 
-		"skills" :
-		[
+		"skills" : [
 			{
 				"level" : "basic",
 				"skill" : "leadership"
@@ -42,19 +38,17 @@
 				"skill" : "archery"
 			}
 		],
-		
-		"texts" :
-		{
+
+		"texts" : {
 			"name" : "蒂姆富尔",
 			"biography" : "人们对这位英雄知之甚少。",
-			"specialty" :
-			{
+			"specialty" : {
 				"description" : "{豹人}\r\n\r\n达到1级以后提高豹人或豹人精英的攻击力与防御力。",
 				"name" : "豹人",
 				"tooltip" : "生物强化：豹人"
 			}
 		},
-		
+
 		"specialty" : {
 			"creature" : "blv1"
 		}

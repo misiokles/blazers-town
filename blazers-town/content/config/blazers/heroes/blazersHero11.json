@@ -1,18 +1,15 @@
 {
-	"blaKaraun" :
-	{
+	"blaKaraun" : {
 		"class" : "honorWarrior",
 		"female" : true,
 
-		"images" :
-		{
+		"images" : {
 			"specialtySmall" : "blazers/heroes/hero11Karaun/spec-small.png",
 			"specialtyLarge" : "blazers/heroes/hero11Karaun/spec-large.png",
 			"large" : "blazers/heroes/hero11Karaun/portrait-large.png",
 			"small" : "blazers/heroes/hero11Karaun/portrait-small.png"
 		},
-		"army" :
-		[
+		"army" : [
 			{
 				"creature" : "blv1",
 				"max" : 30,
@@ -40,18 +37,16 @@
 				"skill" : "armorer"
 			}
 		],
-		"texts" :
-		{
+		"texts" : {
 			"name" : "卡劳恩",
 			"biography" : "人们对这位英雄知之甚少。",
-			"specialty" :
-			{
+			"specialty" : {
 				"description" : "{进攻术}\r\n\r\n在进攻术技能上每级得到5%的额外奖励。",
 				"name" : "进攻术",
 				"tooltip" : "技能加成：进攻术"
 			}
 		},
-		
+
 		"specialty" : {
 			"bonuses" : {
 				"offence" : {

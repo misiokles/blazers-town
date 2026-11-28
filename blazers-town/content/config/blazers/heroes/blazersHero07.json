@@ -1,22 +1,18 @@
 {
-	"blaDanlal" :
-	{
+	"blaDanlal" : {
 		"class" : "brightWizard",
 		"female" : false,
-		"images" :
-		{
+		"images" : {
 			"specialtySmall" : "blazers/heroes/hero07Danlal/spec-small.bmp",
 			"specialtyLarge" : "blazers/heroes/hero07Danlal/spec-large.bmp",
 			"large" : "blazers/heroes/hero07Danlal/portrait-large.png",
 			"small" : "blazers/heroes/hero07Danlal/portrait-small.png"
 		},
 
-		"spellbook" :
-		[
+		"spellbook" : [
 			"counterstrike"
 		],
-		"army" :
-		[
+		"army" : [
 			{
 				"creature" : "blv1",
 				"max" : 30,
@@ -34,8 +30,7 @@
 			}
 		],
 
-		"skills" :
-		[
+		"skills" : [
 			{
 				"level" : "basic",
 				"skill" : "wisdom"
@@ -45,67 +40,121 @@
 				"skill" : "airMagic"
 			}
 		],
-		"texts" :
-		{
+		"texts" : {
 			"name" : "丹拉尔",
 			"biography" : "人们对这位英雄知之甚少。",
-			"specialty" :
-			{
+			"specialty" : {
 				"description" : "本族生物对工厂族的部分兵种造成额外的伤害。",
 				"tooltip" : "特殊奖励：复仇",
 				"name" : "复仇"
 			}
 		},
-		
+
 		"specialty" : {
 			"bonuses" : {
-				"hate1": {	
-					"limiters" : [ { "parameters" : ["blazers"], "type" : "CREATURE_FACTION_LIMITER" } ],
+				"hate1" : {
+					"limiters" : [
+						{
+							"parameters" : [
+								"blazers"
+							],
+							"type" : "CREATURE_FACTION_LIMITER"
+						}
+					],
 					"type" : "HATE",
 					"subtype" : "creature.bountyHunter",
-				    "val" : 50
+					"val" : 50
 				},
-				"hate2": {	
-					"limiters" : [ { "parameters" : ["blazers"], "type" : "CREATURE_FACTION_LIMITER" } ],
+				"hate2" : {
+					"limiters" : [
+						{
+							"parameters" : [
+								"blazers"
+							],
+							"type" : "CREATURE_FACTION_LIMITER"
+						}
+					],
 					"type" : "HATE",
 					"subtype" : "creature.gunslinger",
-				    "val" : 50
+					"val" : 50
 				},
-				"hate3": {	
-					"limiters" : [ { "parameters" : ["blazers"], "type" : "CREATURE_FACTION_LIMITER" } ],
+				"hate3" : {
+					"limiters" : [
+						{
+							"parameters" : [
+								"blazers"
+							],
+							"type" : "CREATURE_FACTION_LIMITER"
+						}
+					],
 					"type" : "HATE",
 					"subtype" : "creature.halfling",
-				    "val" : 50
+					"val" : 50
 				},
-				"hate4": {	
-					"limiters" : [ { "parameters" : ["blazers"], "type" : "CREATURE_FACTION_LIMITER" } ],
+				"hate4" : {
+					"limiters" : [
+						{
+							"parameters" : [
+								"blazers"
+							],
+							"type" : "CREATURE_FACTION_LIMITER"
+						}
+					],
 					"type" : "HATE",
 					"subtype" : "creature.halflingGrenadier",
-				    "val" : 50
+					"val" : 50
 				},
-				"hate5": {	
-					"limiters" : [ { "parameters" : ["blazers"], "type" : "CREATURE_FACTION_LIMITER" } ],
+				"hate5" : {
+					"limiters" : [
+						{
+							"parameters" : [
+								"blazers"
+							],
+							"type" : "CREATURE_FACTION_LIMITER"
+						}
+					],
 					"type" : "HATE",
 					"subtype" : "creature.hotaMechanic",
-				    "val" : 50
+					"val" : 50
 				},
-				"hate6": {	
-					"limiters" : [ { "parameters" : ["blazers"], "type" : "CREATURE_FACTION_LIMITER" } ],
+				"hate6" : {
+					"limiters" : [
+						{
+							"parameters" : [
+								"blazers"
+							],
+							"type" : "CREATURE_FACTION_LIMITER"
+						}
+					],
 					"type" : "HATE",
 					"subtype" : "creature.hotaEngineer",
-				    "val" : 50
+					"val" : 50
 				},
-				"hate7": {	
-					"limiters" : [ { "parameters" : ["blazers"], "type" : "CREATURE_FACTION_LIMITER" } ],
+				"hate7" : {
+					"limiters" : [
+						{
+							"parameters" : [
+								"blazers"
+							],
+							"type" : "CREATURE_FACTION_LIMITER"
+						}
+					],
 					"type" : "HATE",
 					"subtype" : "creature.hotaDreadnought",
-				    "val" : 50
+					"val" : 50
 				},
-				"hate8": {	
-					"limiters" : [ { "parameters" : ["blazers"], "type" : "CREATURE_FACTION_LIMITER" } ],
+				"hate8" : {
+					"limiters" : [
+						{
+							"parameters" : [
+								"blazers"
+							],
+							"type" : "CREATURE_FACTION_LIMITER"
+						}
+					],
 					"type" : "HATE",
 					"subtype" : "creature.hotaJuggernaut",
-				    "val" : 50
+					"val" : 50
 				}
 			}
 		}

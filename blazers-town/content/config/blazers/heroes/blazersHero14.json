@@ -1,18 +1,15 @@
 {
-	"blaSalvirana" :
-	{
+	"blaSalvirana" : {
 		"class" : "honorWarrior",
 		"female" : true,
-		"images" :
-		{
+		"images" : {
 			"specialtySmall" : "blazers/heroes/hero14Salvirana/spec-small.png",
 			"specialtyLarge" : "blazers/heroes/hero14Salvirana/spec-large.png",
 			"large" : "blazers/heroes/hero14Salvirana/portrait-large.png",
 			"small" : "blazers/heroes/hero14Salvirana/portrait-small.png"
 		},
 
-		"army" :
-		[
+		"army" : [
 			{
 				"creature" : "blv2",
 				"max" : 12,
@@ -30,8 +27,7 @@
 			}
 		],
 
-		"skills" :
-		[
+		"skills" : [
 			{
 				"level" : "basic",
 				"skill" : "offence"
@@ -41,21 +37,18 @@
 				"skill" : "scouting"
 			}
 		],
-		"texts" :
-		{
+		"texts" : {
 			"name" : "萨尔维拉纳",
 			"biography" : "人们对这位英雄知之甚少。",
-			"specialty" :
-			{
+			"specialty" : {
 				"description" : "{飞翼眼魔}\r\n\r\n达到2级以后提高飞翼眼魔或浮游眼魔的攻击力与防御力。",
 				"name" : "飞翼眼魔",
 				"tooltip" : "生物强化：飞翼眼魔"
 			}
 		},
-		
+
 		"specialty" : {
 			"creature" : "blv2"
 		}
 	}
 }
-
